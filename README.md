@@ -31,37 +31,35 @@ Per trasformare i commenti grezzi del forum in dati linguistici analizzabili, è
 
 -  **Tokenizzazione, POS tagging e lemmatizzazione**  
   Grazie al modello `it_core_news_sm` di spaCy, ogni commento è stato suddiviso in **token**, etichettato grammaticalmente (POS) e **lemmatizzato**, ovvero ridotto alla forma base del lemma. Sono stati mantenuti solo i token appartenenti a queste quattro categorie grammaticali:
-  - **sostantivi**
-  - **aggettivi**
-  - **verbi**
-  - **avverbi**  
-  Questo filtraggio mirato ha permesso di isolare i termini potenzialmente significativi per la costruzione del dizionario.
+    - **sostantivi**
+    - **aggettivi**
+    - **verbi**
+    - **avverbi**  
+Questo filtraggio mirato ha permesso di isolare i termini potenzialmente significativi per la costruzione del dizionario.
 
 ---
 
 ### 2. **Costruzione del dizionario**
 
 Una volta preprocessati i dati, si è passati alla fase di **costruzione del dizionario computazionale**, con l’obiettivo di valorizzare il linguaggio specifico del forum.
-
--  **Selezione dei termini**  
-  I token lemmatizzati sono stati aggregati e conteggiati. È stato costruito un dizionario grezzo contenente **tutti i lemmi unici** presenti nei commenti. In questa fase, si è data priorità ai:
-  - termini **frequenti**,
-  - **acronimi** usati ricorrentemente,
-  - forme di **slang** e abbreviazioni non presenti nei dizionari standard.
-
--  **Annotazione linguistica e semantica**  
-  Ogni lemma è stato annotato con:
-  - **categoria grammaticale** (POS),
-  - **definizione** (Collegamenti esterni a dizionari online (es. AGLIO, VoDIM, Wiktionary),
-
--  **Esportazione HTML**  
-  Il dizionario è stato trasformato in una pagina HTML che funge da **interfaccia navigabile**.  
-  Ogni lemma è visualizzato con:
-  - il lemma stesso,
-  - la sua categoria grammaticale,
-  - frequenza di occorrenza nel corpus,
-  - eventuali collegamenti esterni a dizionari online (es. AGLIO, VoDIM, Wiktionary), 
- 
+  -  **Selezione dei termini**  
+    I token lemmatizzati sono stati aggregati e conteggiati. È stato costruito un dizionario grezzo contenente **tutti i lemmi unici** presenti nei commenti. In questa fase, si è data priorità ai:
+    - termini **frequenti**,
+    - **acronimi** usati ricorrentemente,
+    - forme di **slang** e abbreviazioni non presenti nei dizionari standard.
+  
+  -  **Annotazione linguistica e semantica**  
+    Ogni lemma è stato annotato con:
+    - **categoria grammaticale** (POS),
+    - **definizione** (Collegamenti esterni a dizionari online (es. AGLIO, VoDIM, Wiktionary),
+  
+  -  **Esportazione HTML**  
+    Il dizionario è stato trasformato in una pagina HTML che funge da **interfaccia navigabile**.  
+    Ogni lemma è visualizzato con:
+    - il lemma stesso,
+    - la sua categoria grammaticale,
+    - frequenza di occorrenza nel corpus,
+    - eventuali collegamenti esterni a dizionari online (es. AGLIO, VoDIM, Wiktionary), 
 ---
 > ✍️ Per dubbi, suggerimenti o collaborazioni, sentiti libera/o di contattarmi su [LinkedIn](https://www.linkedin.com/in/marianatasha-fragalà)
 
