@@ -1,9 +1,9 @@
 # Dizionario Computazionale
 
-**Materia:** Banche dati e trattamento digitale dei testi
-**Corso di laurea:** LM-43
-**Università:** Università di Catania  
-**Anno Accademico:** 2024/2025  
+**Materia:** Banche dati e trattamento digitale dei testi  
+**Corso di laurea:** LM-43  
+**Università:** Università di Catania    
+**Anno Accademico:** 2024/2025    
 
 ---
 
