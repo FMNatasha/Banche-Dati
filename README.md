@@ -61,7 +61,7 @@ Una volta preprocessati i dati, si è passati alla fase di **costruzione del diz
     - frequenza di occorrenza nel corpus,
     - eventuali collegamenti esterni a dizionari online (es. AGLIO, VoDIM, Wiktionary), 
 ---
-> ✍️ Per dubbi, suggerimenti o collaborazioni, sentiti libera/o di contattarmi su [LinkedIn](https://www.linkedin.com/in/marianatasha-fragalà)
+> Per dubbi, suggerimenti o collaborazioni, sentiti libera/o di contattarmi su [LinkedIn](https://www.linkedin.com/in/marianatasha-fragalà)
 
 🙋‍♀ Developed by **Maria Natasha Fragalà**        
 © 2025 Università degli studi di Catania — For educational purposes.
