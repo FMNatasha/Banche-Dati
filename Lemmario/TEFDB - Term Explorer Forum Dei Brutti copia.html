@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEFDB - Term Explorer Forum Dei Brutti</title>
+    <link href
+      ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href
+      ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div>TEFDB</div>
+          <small style="font-size: 0.9rem; font-weight: 100"
+            >Term Explorer Forum Dei Brutti</small
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.kaggle.com/code/natashafragal/progetto-banche-dati"
+                ><i class="fas fa-info-circle"></i> Notebook
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-book"></i> Homepage
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <div class="text-center mb-4">
+        <h1 class="main-title">Consultazione lemmario</h1>
+      </div>
+      <div class="search-container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control search-input"
+              placeholder="Cerca un lemma..."
+            />
+          </div>
+          <div class="col-md-3 mb-3">
+            <select id="posFilter" class="form-select filter-select">
+              <option value="">Tutte le POS</option>
+              <option value="VERB">VERB</option>
+              <option value="ADJ">ADJ</option>
+              <option value="NOUN">NOUN</option>
+              <option value="ADV">ADV</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <select id="frequencyFilter" class="form-select filter-select">
+              <option value="">Tutte le frequenze</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5+</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="stats-item">
+              <div class="stats-number" id="totalLemmi">279</div>
+              <div class="stats-label">Lemmi totali</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stats-item">
+              <div class="stats-number" id="currentPage">1</div>
+              <div class="stats-label">Pagina corrente</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stats-item">
+              <div class="stats-number" id="totalPages">28</div>
+              <div class="stats-label">Pagine totali</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lemma-container">
+        <div class="lemma-header"><i class="fas fa-list"></i> Elenco Lemmi</div>
+        <div id="lemmaList"></div>
+      </div>
+
+      <div class="pagination-container">
+        <nav>
+          <ul class="pagination" id="pagination"></ul>
+        </nav>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!--Dati dei lemmi -->
+    <script src="dizionario_online.js"></script>
+    <!--Varie Animazioni-->
+    <script src="app.js"></script>
+  </body>
+</html>
